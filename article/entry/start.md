@@ -2,4 +2,3 @@
 
 私が本物のmotoki naitoだ！
 masayoshi maezawaワロス
-

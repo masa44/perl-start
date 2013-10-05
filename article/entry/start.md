@@ -1,5 +1,4 @@
-こんにちは
+# blog開設
 
-motiki naitoと申します
-
-このたびブログを開設することになりました。
+私が本物のmotoki naitoだ！
+masayoshi maezawaワロス

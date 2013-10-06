@@ -31,10 +31,9 @@ TMTOWDIとは、
 	print $string . $numbrer . "\n";
 
 Perlは動的型付け言語なので変数に型が存在しません。  
-my という記述は、その変数が参照できる階層を指定できます。後ほど詳しくご説明します。
-
-C言語やJavaのような、型のキャストなどは必要ありません。
-以上の点から、数値を格納した __$number__ と __$string__ は、直接文字列として結合することもできるのです(3行目参照)。
+そのため、C言語やJavaのような、型のキャストなどは不要で変数を使用することができます。  
+そのため、数値を格納した __$number__ と __$string__ は、直接文字列として結合、といったことも可能です(3行目参照)。  
+__my__ という記述は、その変数が参照できる階層を明示的に指示したものです。
 
 ---
 ### 2. 特徴(4) 高い後方互換性
@@ -46,16 +45,15 @@ PerlはX.Y.Zでバージョンが表され、Yが偶数のものが安定版と�
 
 ---
 ### 2. 特徴(5) 様々な環境で使用可能
-Perlは、Linuxのほとんどのディストリビューションに標準でインストールされています。  
-これは、システムを管理するツールがPerlで書かれているためです。
-Windowsでも別途ツールをインストールする必要がありますが、使用することができます。
+Perlは、Linuxのほとんどのディストリビューションに標準でインストールされており、特に準備も不要で使うことができます。  
+Windowsでは標準でインストールはされていませんが、ツールを導入すれば使うことは可能です。
+
+- WindowsでのPerlツール … Strawberry Perl, ActivePerl
 
 ---
 ### 2. 特徴(6) 豊富なモジュール
 PerlではモジュールをCPANと呼ばれる巨大なアーカイブで管理しています。
-これは企業が作成したりするものではなく、すべてPerl Mongerが作成し、投稿しているのです。  
-
-- Perl Monger …　Perl使いのこと
+自分で一から書くと大変なことでも、CPANにあるモジュールを使えば簡単にできることがあります。実装したい事がある場合は、まずCPANをチェックすることをおすすめします。
 
 ##### CPANに関連したサイト
 - CPAN
@@ -66,22 +64,18 @@ PerlではモジュールをCPANと呼ばれる巨大なアーカイブで管理
 ---
 ### 3. 地域コミュニティ
 Perlはコミュニティの活動が活発な言語でもあります。
-例えば、pm.orgに登録されている、いわば公認のコミュニティは
 
-- Hokkaido.pm, Kushiro.pm, Sendai.pm, Niigata.pm, Tokyo.pm, Shibuya.pm, Yokohama.pm, Kamakura.pm, Nagoya.pm, Kansai.pm, Kyoto.pm, Fukuoka.pm
+- 公認  
+Hokkaido.pm, Kushiro.pm, Sendai.pm, Niigata.pm, Tokyo.pm, Shibuya.pm, Yokohama.pm, Kamakura.pm, Nagoya.pm, Kansai.pm, Kyoto.pm, Fukuoka.pm
+- 非公認  
+Hachioji.pm, Namba.pm
 
-がありますが、それ以外にも
-
-- Hachioji.pm, Namba.pm
-- Gotanda.pm ←NEW!
-
-…と、これだけでもかなり精力的に活動が行われているのがお分かりいただけるかと思います。(Gotanda.pmは活動準備段階ですが…)
-
-また、勉強会やイベントも現在では
+勉強会やイベントも行われており、現在定期的に実施されているものは
 
 - Hokkaido.pm Casual, Perl Casual, Perl Beginners, Perl入学式
 
-があります。
+といったものがあります。
+
 
 ---
 ### 4. YAPC::Asia Tokyo
